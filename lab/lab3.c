@@ -27,19 +27,19 @@ int main(int argc, char *argv[]) {
 
     while (fscanf(input, "%d,%d\n", &x, &y) == 2) {
         printf("x1: %d y1: %d\n" , x1, y1);
-//        while(x!=x1 || y!=y1){
-//            if(x1 > x){
-//                x1--;
-//            }
-//            else if(x1 < x){
-//                x1++;
-//            }
-//            if(y1 > y){
-//                y1--;
-//            }
-//            else if(y1 < y){
-//                y1++;
-//            }
+        while(x!=x1 || y!=y1){
+            if(x1 > x){
+                x1--;
+            }
+            else if(x1 < x){
+                x1++;
+            }
+            if(y1 > y){
+                y1--;
+            }
+            else if(y1 < y){
+                y1++;
+            }
 
             struct Coordinate *new_coord = (struct Coordinate *) malloc(sizeof(struct Coordinate));
             new_coord->x = x1;
